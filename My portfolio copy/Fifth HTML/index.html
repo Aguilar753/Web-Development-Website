@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="css/master.css">
+    <script src="https://kit.fontawesome.com/a692e1c39f.js" crossorigin="anonymous"></script>
+    <script defer src="app.js"></script>
+</head>
+<body>
+
+    <!-- Parallexx section -->
+    <div class="parallax-section">
+    <img src="Images/Photo.png" id="photo1">
+    <img src="Images/Photo2.png" id="photo2">
+    <div class="Title">
+    <h2>My Photos.</h2>
+    </div>
+    </div>
+
+    <!-- Button -->
+
+    <a href="/My portfolio copy/Index.html" class="Button Transition__content">Back to the main page.</a>
+
+    <!-- JavaScript -->
+
+    	<script type="text/javascript">
+        let photo1 = document.getElementById("photo1");
+            let photo2 = document.getElementById("photo2");
+
+            window.addEventListener('scroll', function () {
+                var value = window.scrollY;
+                document.getElementById("photo1").style.top = -value * 0.5 + 'px'; 
+                document.getElementById("photo2").style.top = -value * 0.5 + 'px'; 
+
+});
+
+    </script>
+
+</body>
+</html>

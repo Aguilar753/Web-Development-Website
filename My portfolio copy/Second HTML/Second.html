@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://kit.fontawesome.com/a692e1c39f.js" crossorigin="anonymous"></script>
+    <script defer src="app.js"></script>
+</head>
+<body>
+
+               
+        <!-- Header and button -->
+
+        <header>
+        <div class="MyPosters">
+        <h1 class="Transition__content">My Poster Designs.</h1>
+        </div>
+        </header>
+
+        <!-- Graphic design section -->
+        
+        <a href="/My portfolio copy/Index.html" class="Button Transition__content">Back to the main page.</a>
+        <a href="/My portfolio copy/Third HTML/Poster1.html">
+        <div class="Posters Transition__content">
+        <img src="images/Poster1.png" alt="Posters">
+        </div>
+        </a>
+        <a href="/My portfolio copy/Third HTML/Poster2.html">
+        <div class="Posters Transition__content">
+        <img src="images/Poster2.png" alt="Posters">
+        </div>
+        </a>
+        <a href="/My portfolio copy/Third HTML/Poster3.html">
+        <div class="Posters Transition__content">
+        <img src="images/Poster3.png" alt="Posters">
+        </div>
+        </a>
+        <a href="/My portfolio copy/Third HTML/Poster4.html">
+        <div class="Posters Transition__content">
+        <img src="images/Poster4.png" alt="Posters">
+        </div>
+        </a>
+        <a href="/My portfolio copy/Third HTML/Poster5.html">
+        <div class="Posters Transition__content">
+        <img src="images/Poster5.png" alt="Posters">
+        </div>
+        </a>
+        <a href="/My portfolio copy/Third HTML/Poster6.html">
+        <div class="Posters Transition__content">
+        <img src="images/Poster6.png" alt="Posters">
+        </div>
+        </a>
+
+        <!-- Javascript -->
+    
+    <script>
+
+        const transition = document.querySelectorAll(".Transition__content");
+        
+        document.addEventListener("scroll", function () {
+            transition.forEach(transition => {
+                if (isInView(transition)) {
+                    transition.classList.add("Transition__content__active");
+                    
+                }
+            });
+        });
+        
+        function isInView(element) {
+            const rec = element.getBoundingClientRect();
+            return (
+                rec.bottom > 0 &&
+                rec.top < (window.innerHeight - 150 || document.documentElement.clientHeight - 150)
+            );
+        }
+        
+    </script>
+</body>
+</html>

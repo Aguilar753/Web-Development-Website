@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Body Styling */
+
+body {
+
+    font-family: "Poppins", sans-serif; /* Font imported from google fonts */
+    height: 600px; /* The height of the homepage */
+    background-color: #D6CCC2; /* Overall background color of the homepage */
+    background-size: cover; /* Cover of the bac */
+    overflow-x: hidden; /* So the pages wont overlap */
+    animation: transitionIn 0.55s; /* Fade in intro  */
+
+}
+
+/* Font face */
+
+@font-face {
+
+    font-family: 'Calliga'; /* Font name */
+    src: url(Fonts/DxGrafik-SemiBold.otf); /* Font TTF file  */
+
+}
+
+
+.MyPosters {
+
+    color: #000; /* Text color: Black */
+    margin: 0 auto; /* Margin to 0 wit auto */
+    display: flex; /* Contents in order */
+    align-items: center; /* Contents are centered */
+    justify-content: space-around;  
+    width: 1000px; /* Width of the page */
+    max-width: 85%; /* max-width of the page */
+    min-height: 100vh; /* min-height of the posters */
+
+}
+
+
+html {
+
+    scroll-behavior: smooth; /* Smooth scroll when scrolling */
+    margin: 0; /* Margin to 0 */
+    padding: 0; /* Padding Reset */
+    width: 100%; /* Page's Width */
+    height: 100%; /* Page's Height */
+    
+}
+
+
+.MyPosters {
+
+    font-size: 50px; /* Text size */
+    color: #000; /* Text color: black*/
+    font-weight: 600; /* Font style */
+    font-family: 'Calliga'; /* Font name */
+    text-align: center;  /* Texts centered */
+
+}
+
+.Posters {
+
+    padding: 15px; /* Padding size */
+    padding-left: 20px; /* Padding to left */
+    float: left; /* The posters on the left */
+    width: 48%; /* Width of the image */
+
+}
+
+img {
+
+    width: 100%; /* Width of the image */
+
+}
+
+.Button {
+
+    font-family: "Poppins", sans-serif;  /* Font name */
+    border: none; /* No border */
+    padding: 13px; /* Padding size */
+    color: #000; /* Text color: Black */
+    border: none; /* No border */
+    border-radius: 25px; /* Radius of the border */
+    font-size: 16px; /* Text size */
+    cursor: pointer; /* cursor */
+    background-color: transparent; /* Transparent background */
+    border: solid 1px #000; /* Button outlines */
+    text-decoration: none; /* No decoration */
+    outline: none; /* No outline */
+    position: absolute; /* Positioning */
+    top: 12%; /* Button positioning to top */
+    left: 44%; /* Button positioning to left */
+    transform: translate(-50%, -50%); /* Button positioning to center*/
+    text-align: center; /* Text alignment*/
+
+  }
+.Transition__content {
+
+    transform: translateY(120px); /* Upward transition */
+    transition: 1s ease; /* Transition duration with ease */
+    opacity: 0; /* 0 opacity */
+
+}
+
+.Transition__content__active {
+
+    transform: translateY(0px); /* Upward transition */
+    opacity: 1; /* 1 opacity */
+ 
+}

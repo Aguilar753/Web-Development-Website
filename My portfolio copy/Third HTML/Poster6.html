@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Document</title>
+ <script src="https://kit.fontawesome.com/a692e1c39f.js" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Poster Description -->
+  
+  <section class="Poster-contents">
+  <div class="Poster-description">
+  <a href="/My portfolio copy/Second HTML/Second.html">
+  <img src="Images/images/images/Poster6.png" class="Poster Transition__content">
+  <div class="Descriptions">
+  <h2 class="Transition__content">Sambas.</h2>
+  <h3 class="Transition__content">Graphic Design<i class="fa-solid fa-brush"></i></h3>
+  <p class="Transition__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita natus ad sed harum itaque ullam enim quas, veniam accusantium, quia animi id eos adipisci iusto molestias asperiores explicabo cum vero atque amet corporis! Soluta illum facere consequuntur magni. Ullam dolorem repudiandae cumque voluptate consequatur consectetur, eos provident necessitatibus reiciendis corrupti!</p>
+</div>
+
+<style>
+
+
+/* Importing Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+
+    margin: 0; /* Margin to 0 */
+    padding: 0; /* padding to 0 */
+
+}
+
+
+body {
+
+    font-family: "Poppins", sans-serif; /* Font imported from google fonts */
+    height: 600px; /* The height of the homepage */
+    background-color: #D6CCC2; /* Overall background color of the homepage */
+    background-size: cover; /* Cover of the bac */
+    overflow-x: hidden; /* So the pages wont overlap */
+    animation: transitionIn 0.55s; /* Fade in intro  */
+    
+}
+
+/* Font face */
+
+@font-face {
+
+font-family: 'Calliga'; /* Font name */
+src: url(Fonts/DxGrafik-SemiBold.otf); /* Font TTF file  */
+
+}
+
+
+html {
+
+scroll-behavior: smooth; /* Smooth scroll when scrolling */
+margin: 0; /* Margin to 0 */
+padding: 0; /* Padding Reset */
+width: 100%; /* Page's Width */
+height: 100%; /* Page's Height */
+
+}
+
+
+.Poster-contents {
+
+  color: #000; /* Text color: Black */
+  width: 100%; /* Page's Width */
+  padding: 90px 0; /* Padding size */
+
+}
+
+.Poster {
+
+  height: auto; /* Page's Height */
+  width:  300px; /* Page's Width */
+  border-radius: 10px; /* Image border */
+  border: 2px solid #000; /* Border outline */
+  opacity: .5;  /* Opacity transition */
+  transition: ease-in-out 0.5s; /* Transition duration */
+
+}
+
+.Poster:hover {
+
+  transform: scale(1.1); /* Scale transition */
+  -webkit-box-shadow: -1.5px 3px 0 15px #000; /* Border 1 */
+  -moz-box-shadow: -1.5px 3px 0 15px #000; /* Border 2 */
+  box-shadow: -1.5px 3px 0 15px #000; /* Box shadow */
+
+}
+
+.Poster-description {
+  
+  margin: 0 auto; /* Margin to 0 */
+  display: flex; /* Contents in order */
+  align-items: center; /* Contents aligned to the center */
+  justify-content: space-around;  /* Spaces */
+  width: 1000px; /* Page's Width */
+  max-width: 85%; /* Page's max width */
+  min-height: 100vh; /* Page's min-height */
+  
+}
+
+.Descriptions {
+
+  width: 540px; /* Page's Width */
+
+}
+
+.Descriptions h2 {
+  
+  font-family: 'Calliga'; /* Font name */
+  font-size: 90px; /* Text size */
+  font-weight: 600; /* Font style */
+  margin-bottom: 10px; /* Text to bottom */
+
+}
+
+.Descriptions h3 {
+
+  font-family: 'Calliga'; /* Font name */
+  font-size: 22px; /* Text size */
+  font-weight: 500; /* Font style */
+  margin-bottom: 20px; /* Text to bottom */
+
+}
+
+.Descriptions p {
+
+  font-size: 18px; /* Text size */
+  line-height: 25px; /* Line height spacing */
+  letter-spacing: 1px; /* Spacing of the text */
+
+}
+
+.fa-solid.fa-brush {
+
+  margin-left: 10px; /* Icon margin to left */
+    
+}
+
+
+.Transition__content {
+
+transform: translateY(120px); /* Upward transition */
+filter: blur(5px); /* Filter */
+transition: 1s ease; /* Transition duration */
+opacity: 0;  /* 0 opacity */
+
+}
+
+.Transition__content__active {
+
+    transform: translateY(0px);  
+    filter: blur(0px); /* 0 blur*/
+    opacity: 1; /* 1 opacity */
+
+}
+
+
+
+</style>
+
+<script>
+
+    const transition = document.querySelectorAll(".Transition__content");
+    
+    document.addEventListener("scroll", function () {
+        transition.forEach(transition => {
+            if (isInView(transition)) {
+                transition.classList.add("Transition__content__active");
+                
+            }
+        });
+    });
+    
+    function isInView(element) {
+        const rec = element.getBoundingClientRect();
+        return (
+            rec.bottom > 0 &&
+            rec.top < (window.innerHeight - 150 || document.documentElement.clientHeight - 150)
+        );
+    }
+    
+</script>
+
+</body>
+</html>

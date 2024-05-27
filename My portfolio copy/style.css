@@ -1,0 +1,926 @@
+/* Importing Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+
+    margin: 0; /* Margin to 0 */
+    padding: 0; /* padding to 0 */
+
+}
+
+/* Body Styling */
+
+body {
+
+    font-family: "Poppins", sans-serif; /* Font imported from google fonts */
+    height: 800px; /* The height of the homepage */
+    background-color: #D6CCC2; /* Overall background color of the homepage */
+    background-size: cover; /* Cover of the bac */
+    overflow-x: hidden; /* So the pages wont overlap */
+    animation: transitionIn 0.55s; /* Fade in intro  */
+
+}
+
+/* transition keyframe */
+
+@keyframes transitionIn {
+
+    from {
+
+        opacity: 0; /* From start */
+
+    }
+
+    to {
+
+        opacity: 1; /* To end */
+
+    }
+
+}
+
+/* Font face */
+
+@font-face {
+
+    font-family: 'Calliga'; /* Font name */
+    src: url(Fonts/DxGrafik-SemiBold.otf); /* Font OTF file  */
+
+}
+
+
+/* Styling homepage */
+
+.homepage {
+
+    margin: 0; /* Margin to 0 */
+    position: absolute; /* Used for positioning the text */
+    top: 50%; /* Text Position from top */
+    left: 50%; /* Text Position from the left */
+    transform: translate(-50%, -50%); /* Use for Centering */
+    text-align: center; /* Alignment of the text to the center*/
+
+}
+
+/* HTML */
+
+html {
+
+    scroll-behavior: smooth; /* Smooth scroll when scrolling */
+    margin: 0; /* Margin to 0 */
+    padding: 0; /* Padding Reset */
+    width: 100%; /* Page's Width */
+    height: 100%; /* Page's Height */
+    
+}
+
+/* Paragraph */
+
+p {
+
+    color: #000; /* Color of the paragraph */
+
+}
+
+/* Navigation bar */
+
+nav, .nav-links {
+
+    display: flex; /* Nav in order */
+
+}
+
+nav {   
+    
+    margin-right: 50px; /* The margin from the right side */
+    cursor: pointer; /* When hovering, a cursor will show */
+    justify-content: space-around; /* Spacing around */
+    align-items: center; /* Text Alignment */
+    height: 10vh; /* Height of the navs */
+
+
+
+}
+
+.nav-links {
+    
+    letter-spacing: 2px; /* Spacing of the letters */
+    gap: 5rem; /* Gap of the navs */
+    list-style: none; /* Removes the list style */
+    font-size: 1.0rem; /* Size of the text */
+    
+}
+
+nav a {
+
+    color: black; /* Text Color: Black  */
+    text-decoration: none; /* Remove underline */
+    
+}
+
+/* Logo */
+
+.logo {
+
+    font-size: 30px; /* Size of the text */
+    font-weight: 600; /* Font style */
+
+}
+
+/* Title of the homepage */
+
+.title {
+    
+    justify-content: space-around; /* Spacing around */
+    align-items: center; /* Align to the center */
+    height: 2vh; /* Height */
+
+}
+
+/* Section */
+
+section {
+
+    padding: 80px 20%; /* Padding sizes */
+
+}
+
+/* Introduction section */
+
+.Introduction {
+ 
+    font-family: "Calliga"; /* Font name */
+    color: #000; /* Text Color: Black  */
+    font-weight: bolder; /* Font style */
+    font-size: 70px; /* Size of the text */
+
+}
+
+/* Div class */
+
+.Greet h1 {
+    
+    font-family: "Calliga";  /* Font name */
+    font-size: 20px; /* Size of the text */
+    font-weight: 600; /* Font style */
+    color: #000 /* Text Color: Black  */
+
+}
+
+.Greet p {
+
+    color: #000 /* Text Color: Black */
+    
+}
+
+
+/* Homepage */
+
+.homepage {
+ 
+    position: relative; /* Relative position of the homepage */
+    min-height: 50vh; /* Min-height of the homepage */
+    display: flex; /* Flex container */
+    justify-content: center; /* Align the contents horizontally */
+    flex-direction: column;  /* Flex Direction */
+    gap: 2rem;  /* Gap of the contents */
+
+}
+
+/* About section */
+
+.about-section {
+
+    background: url(Backgrounds/About\ Background.png) no-repeat left; /* Background URL */
+    background-size: 65%; /* Size of the background */
+    overflow: hidden; /* Overflow is hidden */
+    padding: 500px 0; /* Padding size */
+  
+}
+
+/* Container */
+
+.inner-container {
+
+    width: 55%; /* Width size of the container */
+    float: right; /* Container to the right */
+    backdrop-filter: blur(15px); /* Filter of the container */
+    border-radius: 10px; /* Border radius size of the container box */
+    background: rgba(255, 255, 255, 0.1); /* Grey RGB color for a glass-like effect */
+    padding: 150px;  /* Container padding */
+
+}
+
+/* About section */
+
+.about-section {    
+    
+    color: #000; /* Text Color: Black */
+    gap: 2rem; /* Gap of the contents */
+      
+}
+
+.about-section h1 {
+
+    color: #000; /* Text Color: Black */
+    font-family: "Calliga"; /* Font name */
+    font-size: 75px; /* Size of the text */
+
+
+}
+
+.about-section p {
+
+    color:#000; /* Text Color: Black */
+
+}
+
+::selection {
+    
+    background-color: #000; /* Highlights color */
+
+}
+
+/* Skills section */
+
+.Skills-background {
+
+    width: 60%; /* Width Size*/
+    height: 120vh; /*Height of the background */
+    background-color: #D6CCC2; /* Background color */
+    background-position: center; /* Background center aligned */
+    background-size: cover; /* Background cover to fit the layout */
+    background-repeat: no-repeat; /* Added no repeat so the background would not repeat itself */
+
+}
+
+.Skills-content h2 {
+
+    font-family: "Calliga"; /* Font name */
+    font-size: 95px; /* Text size */
+
+}
+
+.Skills-content P {
+
+    color: #000; /* Text Color: Black */
+    overflow: hidden; /* Hidden overflow */
+    font-weight: 100px; /* Font style */
+
+}
+
+.Skills-content {
+
+    width: 70%; /* Width size */
+    min-height: 100vh; /* Height size*/
+    gap: 2rem; /* Gap spacing */
+    margin: 0; /* Margin to 0 */
+    position: absolute; /* For positioning */
+    position: relative; /* Relative position of the skills section */
+    top: 120%; /* Contents to top */
+    left: 70%; /* Contents to left */
+    transform: translate(-50%, -50%); /* Contents in the center */
+    direction: rtl; /* Contents direction to left */
+
+}
+
+/* Interest section */
+
+.Interest-background {
+
+    width: 60%; /* Width size */
+    height: 100vh; /* Height size */
+    background-color: #D6CCC2; /* Background color */
+    background-position: center; /* Background position to center */
+    background-size: cover; /* to fit and cover the background */
+    background-repeat: no-repeat; /* No repeat */
+
+}
+
+.Interest-content h2 {
+
+    font-family: "Calliga"; /* Font name */
+    font-size: 95px; /* Text Size */
+
+}
+
+.Interest-content P {
+
+    color: #000; /* Text Color: Black */
+    overflow: hidden; /* Hidden overflow */
+    font-weight: 100px; /*Font style */
+
+}
+
+.Interest-content {
+
+    position: relative; /* Relative position of the skills section */
+    width: 70%; /* Width size */
+    min-height: 100vh; /* min-height size */
+    display: flex; /* Contents in order */
+    justify-content: center; /* Align the contents horizontally */
+    flex-direction: column; /* Flex Direction */
+    gap: 2rem; /* Spaces */
+
+}
+
+/* Expirience section */
+
+.Experience-background {
+
+    width: 60%; /* Width size */
+    height: 100vh; /* Height size */
+    background: url(Backgrounds/Divider.png); /* Background URL */
+    background-color: #D6CCC2; /* Background color */
+    background-position: center; /* Background positioning in the center */
+    background-size: cover; /* Background cover to fit the screen */
+    background-repeat: no-repeat; /* No repeat */
+   
+}
+
+.Experience-content h2 {
+
+    font-family: "Calliga"; /* Font name */
+    font-size: 95px; /* Text size */
+
+}
+
+.Experience-content P {
+
+    color: #000;  /* Text Color: Black */
+    overflow: hidden;  /* Hidden overflow */
+    font-weight: 100px;  /* Font style */
+
+}
+
+.Experience-content {
+    
+    position: relative; /* Relative position of the Expirience section */
+    width: 70%;  /* Width size */
+    min-height: 10vh; /* min-height size */
+    display: flex; /* Contents in order */
+    flex-direction: column; /* Flex Direction */
+    gap: 2rem; /* Text spaces */
+    direction: rtl; /* Contents direction to left */
+    float: right; /* Contents to right */
+
+}
+
+/* Photography section */
+
+.Photography-background {
+
+    width: 60%; /* Width size */
+    height: 85vh; /* Height size */
+    background-color: #000; /* Background color */
+    background-position: center; /* Background positioning in the center */
+    background-size: cover; /* Background cover to fit the screen */
+    background-repeat: no-repeat; /* No repeat */
+ 
+}
+
+.Photography-content h2 {
+
+
+    color: #D6CCC2; /* Text Color: Neutral beige */
+    font-family: "Calliga"; /* Font name */
+    font-size: 100px; /* Text size */
+
+}
+
+.Photography-content P {
+
+    padding: 10px; /* Padding size */
+    border-radius: 15px; /* Border size */
+    color: #D6CCC2; /* Text Color: Neutral beige */
+    overflow: hidden; /* Hidden overflow */
+    font-weight: 100px; /* Font style */
+    
+}
+
+.Photography-content {
+
+    margin: 0; /* Margin to 0 */
+    position: absolute; /* For positioning */
+    top: 50%;  /* Contents to top */
+    left: 50%;  /* Contents to bottom */
+    transform: translate(-50%, -50%);  /* Contents in the center */
+    text-align: center;  /* Text center aligned */
+    position: relative; /* Relative position of the Photography section */
+    width: 70%; /* Width size */
+    min-height: 30vh; /* min-height size */
+    justify-content: center; /* Align the contents horizontally */
+    flex-direction: column; /* Flex Direction */
+    gap: 2rem; /* Text spaces */
+    
+}
+
+/* Design section */
+
+.Myworks-background {
+
+    width: 60%; /* Width size */
+    height: 85vh; /* Height size */
+    background-color: #000; /* Background color */
+    background-position: center; /* Background positioning in the center */
+    background-size: cover; /* Background cover to fit the screen */
+    background-repeat: no-repeat; /* No repeat */
+
+}
+
+.Myworks-content h2 {
+
+    color: #D6CCC2; /* Text Color: Neutral beige */
+    font-family: "Calliga"; /* Font name */
+    font-size: 100px; /* Text size */
+
+}
+
+.Myworks-content P {
+
+    padding: 10px; /* Padding size */
+    border-radius: 15px; /* Border size */
+    color: #D6CCC2; /* Text Color: Neutral beige */
+    overflow: hidden; /* Hidden overflow */
+    font-weight: 100px; /* Font style */
+    
+}
+
+.Myworks-content {
+
+    margin: 0; /* Margin to 0 */
+    position: absolute; /* For positioning */
+    top: 50%;  /* Contents to top */
+    left: 50%;  /* Contents to left */
+    transform: translate(-50%, -50%);  /* Contents in the center */
+    text-align: center;  /* Text center aligned */
+    position: relative; /* Relative position of the Photography section */
+    width: 70%; /* Width size */
+    min-height: 30vh; /* min-height size */
+    justify-content: center; /* Align the contents horizontally */
+    flex-direction: column; /* Flex Direction */
+    gap: 2rem; /* Text spaces */
+    
+    
+}
+
+/* Buttons */
+
+.Button1 {  
+ 
+    font-family: "Poppins", sans-serif; /* font name */
+    color: #000; /* Text color: black*/
+    cursor: pointer; /* cursor */
+    text-decoration: none; /* No decoration */
+    gap: 5rem; /* Text spaces */
+    font-weight: 500; /* Font style */
+    outline: none; /* No outline */
+    
+}
+
+.Button2 {  
+
+    text-align: center; /* Button center aligned */
+    left: 55%; /* Contents to left */
+    font-family: "Poppins", sans-serif; /* Font name */
+    font-weight: bold; /* Font style */
+    border: none; /* No border */
+    padding: 13px; /* Padding size */
+    color: #D6CCC2; /* Text color: neutral beige */
+    border: none; /* No border */
+    border-radius: 15px; /* Radius of the border */
+    font-size: 16px; /* Text size */
+    cursor: pointer; /* cursor */
+    text-decoration: none; /* No decoration */
+    outline: none; /* No outline */
+    background: transparent; /* Transparent background */
+    margin: 0; /* Margin to 0 */
+    transition: transform 0.5s; /* Transition duration */
+
+}
+
+.Button3 {  
+
+    text-align: center; /* Button center aligned */
+    left: 55%; /* Contents to left */
+    font-family: "Poppins", sans-serif; /* Font name */
+    font-weight: bold; /* Font style */
+    border: none; /* No border */
+    padding: 13px; /* Padding size */
+    color: #D6CCC2; /* Text color: neutral beige */
+    border: none; /* No border */
+    border-radius: 15px; /* Radius of the border */
+    font-size: 16px; /* Text size */
+    cursor: pointer; /* cursor */
+    text-decoration: none; /* No decoration */
+    outline: none; /* No outline */
+    background: transparent; /* Transparent background */
+    margin: 0; /* Margin to 0 */
+    transition: transform 0.5s; /* Transition duration */
+
+}
+
+.Button2:hover {
+
+    background: #D6CCC2;  /* Background color transition */
+    color: #000; /* color transition */
+  
+
+  }
+
+.Button3:hover {
+
+    background: #D6CCC2;  /* Background color transition */
+    color: #000; /* color transition */
+
+  }
+
+  /* Services */
+
+.services-background {
+
+    background-color: #000; /* Background color */
+    width: 60%; /* Background's width */
+    height: 110vh; /* Background's height */
+
+}
+
+.content {
+
+    color: #D6CCC2;  /* Text color: Neutral beige */
+    font-family: "Calliga"; /* Font name */
+    font-weight: bolder; /* Font style */
+    font-size: 45px; /* Text size */
+    margin: 0; /* Text size */
+    position: absolute; /* For positioning */
+    top: 30%; /* Contents to top */
+    left: 50%; /* Contents to left */
+    transform: translate(-50%, -50%); /* Contents to center */
+    text-align: center; /* text aligned to center */
+    position: relative; /* Relative position of the Service section */
+    
+}
+
+.content h1 {
+
+    font-size: 100px; /* Text size */
+
+}
+
+.services {
+ 
+    color: #000; /* Text color: black */
+    display: flex; /* Contents in order */
+    justify-content: center; /* Align the contents horizontally */
+    align-items: center; /* Align the items in the center */
+    flex-direction: column; /* Flex Direction */
+    
+}
+
+.card-container {
+
+    display: flex; /* Contents in order */
+    justify-content: space-between; /* Align the contents horizontally */
+
+}
+
+.card {
+
+    border-radius: 16px; /* Radius of the border */
+    padding: 1px; /* Padding size */
+    width: 300px; /* Card's width */
+    height: 1000px; /* Card's height */
+    margin: 10px; /* Margin of the card */
+    text-align: center; /* Text aligned to the center */
+    overflow: hidden; /* Hidden overflow */
+    position: relative; /* Relative position of the Service section */
+    display: flex; /* Contents in order */
+    flex-direction: column; /* Flex Direction */
+    align-items: center; /* Align the items in the center */
+    justify-content: center; /* Align the contents horizontally */
+
+}
+
+    /* Tools section */
+
+.Tools-background {
+
+    background-image: url(Backgrounds/Divider.png); /* Background URL */
+    background-color: #000; /* Background color */
+    width: 60%; /* Background's Width*/
+    height: 100vh; /* Background's height*/
+
+}
+
+.Tools-content {
+
+    font-family: "Calliga"; /* Font name */
+    font-weight: bolder; /* Font style */
+    font-size: 45px; /* Text size */
+    margin: 0; /* Text size */
+    position: absolute; /* For positioning */
+    top: 30%; /* Contents to top */
+    left: 50%; /* Contents to left */
+    transform: translate(-50%, -50%); /* Contents to center */
+    text-align: center; /* text aligned to center */
+    position: relative; /* Relative position of the Service section */
+    
+}
+
+.Tools-content h1 {
+
+    color: #D6CCC2; /* Text color: Neutral beige */
+    font-size: 100px; /* Text size */
+
+}
+
+.card-container {
+ 
+    display: flex; /* Contents in order */
+    justify-content: space-between; /* Align the contents horizontally */
+
+
+}
+
+.card {
+
+    color: #000; /* Text color */
+    border-radius: 16px; /* Radius of the border */
+    padding: 1px; /* Padding size */
+    width: 300px; /* Card's width */
+    height: 1000px; /* Card's height */
+    margin: 10px; /* Margin of the card */
+    text-align: center; /* Text aligned to the center */
+    overflow: hidden; /* Hidden overflow */
+    position: relative; /* Relative position of the Service section */
+    display: flex; /* Contents in order */
+    flex-direction: column; /* Flex Direction */
+    align-items: center; /* Align the items in the center */
+    justify-content: center; /* Align the contents horizontally */
+
+}
+
+    /* Software sections */
+
+.Software-background {
+
+    background-image: url(Backgrounds/Divider2.png); /* Background URL */
+    width: 60%; /* Width size */
+    height: 120vh; /* Height size */
+    background-color: #D6CCC2; /* Background color */
+    background-position: center; /* Background positioning in the center */
+    background-size: cover; /* Background cover to fit the screen */
+    background-repeat: no-repeat; /* No repeat */
+
+}
+
+.Software-content h2 {
+
+    font-family: "Calliga"; /* Font name */
+    font-size: 95px; /* Text size */
+
+
+}
+
+.Software-content P {
+
+    color: #000; /* Text color: black */
+    overflow: hidden; /* Hidden overflow */
+    font-weight: 100px; /* Font style */
+
+}
+
+.Software-content {
+
+    width: 70%;  /* Content's width */
+    min-height: 100vh; /* min-height width */
+    gap: 2rem; /* Content's gap spacing */
+    margin: 0; /* margin to 0 */
+    position: absolute; /* For positioning */
+    position: relative; /* Relative position of the Service section */
+    top: 85%; /* Contents to top */
+    left: 20%; /* Contents to left */
+    transform: translate(-50%, -50%); /* Contents to center */
+
+}
+
+
+.illustration {
+
+    height: 400px; /* Image's height */
+    width: 400px; /* Image's width */
+    position: absolute; /* For positioning */
+    left: 130%; /* Image to top */
+    bottom: 70%; /* Image to left */
+
+}
+
+
+.Contact-background {
+
+    background: url(Backgrounds/Contacts\ Background.png) no-repeat right; /* Background URL */
+    background-size: 5%; /* Size of the background */
+    overflow: hidden; /* Overflow is hidden */
+    width: 60%; /* Width size */
+    height: 120vh; /* Height size */
+    background-position: center; /* Background positioning in the center */
+    background-size: cover; /* Background cover to fit the screen */
+    background-repeat: no-repeat; /* No repeat */
+
+}
+
+.Contact-content h2 {
+
+    font-family: "Calliga"; /* Font name */
+    font-size: 190px; /* Text size */
+    
+}
+
+.Contact-content h3 {
+
+    text-align: center; /* Contents aligned */
+    font-size: 20px; /* Text size */
+
+
+}
+
+.Contact-content h4 {
+
+    text-align: center; /* Contents aligned */
+    font-size: 30px; /* Text size */
+    font-weight: bold; /* Font Style */
+    color: #D6CCC2; /* Text color: Neutral beige */
+
+}
+
+
+.Contact-content {
+
+    width: 70%;  /* Content's width */
+    min-height: 100vh; /* min-height width */
+    gap: 2rem; /* Content's gap spacing */
+    margin: 0; /* margin to 0 */
+    position: absolute; /* For positioning */
+    position: relative; /* Relative position of the Service section */
+    top: 85%; /* Contents to top */
+    left: 50%; /* Contents to left */
+    transform: translate(-50%, -50%); /* Contents to center */
+
+}
+
+/* Icons */
+
+.fa-solid.fa-comment {
+
+    margin-right: 20px; /* Margin to the right to make space */
+    
+}
+
+.fa-solid.fa-caret-down {
+
+    margin-left: 20px; /* Margin to the left to make space */
+
+}
+
+
+.fa-solid.fa-camera {
+
+    color: #000; /* Text color: black */
+    padding: 15px; /* Padding size */
+    border-radius: 50%; /* Border radius */
+    background-color: #D6CCC2; /* Background color */
+
+}
+
+.fa-solid.fa-palette {
+
+    color: #000; /* Text color: black */
+    padding: 15px; /* Padding size */
+    border-radius: 50%; /* Border radius */
+    background-color: #D6CCC2; /* Background color */
+
+}
+
+.fa-solid.fa-laptop {
+
+    color: #000; /* Text color: black */
+    padding: 15px; /* Padding size */
+    border-radius: 50%; /* Border radius */
+    background-color: #D6CCC2; /* Background color */
+
+}
+
+.card h2 {
+    
+    font-family: 'Calliga';  /* Font name */
+    color: #D6CCC2; /* Text color: Neutral beige */
+    font-size: 25px;  /* Text size */
+
+}
+
+.card p {
+
+    color: #D6CCC2; /* Text color: Neutral beige */
+    padding: 20px; /* Padding size */
+
+}
+
+.Socials-background {
+
+    width: 60%; /* Width size */
+    height: 55vh; /* Height size */
+    background-color: #000; /* Background color */
+    background-position: center; /* Background positioning in the center */
+    background-size: cover; /* Background cover to fit the screen */
+    background-repeat: no-repeat; /* No repeat */
+
+}
+
+.Socials-content h2 {
+
+    color: #D6CCC2; /* Text Color: Neutral beige */
+    font-family: "Calliga"; /* Font name */
+    font-size: 100px; /* Text size */
+
+}
+
+.Socials-content P {
+
+    padding: 10px; /* Padding size */
+    border-radius: 15px; /* Border size */
+    color: #D6CCC2; /* Text Color: Neutral beige */
+    overflow: hidden; /* Hidden overflow */
+    font-weight: 100px; /* Font style */
+    
+}
+
+.Socials-content {
+
+    margin: 0; /* Margin to 0 */
+    position: absolute; /* For positioning */
+    top: 50%;  /* Contents to top */
+    left: 50%;  /* Contents to left */
+    transform: translate(-50%, -50%);  /* Contents in the center */
+    text-align: center;  /* Text center aligned */
+    position: relative; /* Relative position of the Photography section */
+    width: 70%; /* Width size */
+    min-height: 30vh; /* min-height size */
+    justify-content: center; /* Align the contents horizontally */
+    flex-direction: column; /* Flex Direction */
+    gap: 2rem; /* Text spaces */
+    
+    
+}
+
+.Socials{
+
+    list-style: none; /* No list styles */
+    display: flex; /* Socials in order */
+    align-items: center; /* Socials aligned in the center */
+    justify-content: center; /* Align the contents horizontally */
+
+}
+
+.Socials li{
+
+    margin: 0 10%; /* Margin spaces around each social icon. */
+
+}
+.Socials a{
+
+    text-decoration: none; /* No decoration */
+    color: #D6CCC2; /* Text color: Neutral beige */
+
+}
+
+.Socials a i{
+
+    font-size: 30px; /* Text size */
+    transform: translateY(0px); /* Upward unimation */
+    transition: 1s ease; /* Transition duration with ease */
+
+
+}
+.Socials a:hover i{
+
+    color: #fff; /* Color fade in animation */
+    transform: translateY(-20px); /* Upward unimation */
+    
+}
+
+/* JavaScript Transitions */
+
+.Transition__content {
+
+    transition: 2s ease; /* Transition smoothness and duration */
+    opacity: 0; /* Fade out */
+
+}
+
+.Transition__content__active {
+
+    opacity: 1; /* Fade in */
+
+}
+

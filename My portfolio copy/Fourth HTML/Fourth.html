@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- HTML -->
+
+    <!-- About me section -->
+    
+        <div class="Aboutme-background">
+        <div class="Aboutme-content">
+        <div class="Description">
+        <h2 class="Transition__content">About me</h2>
+        <h3 class="Transition__content">Graphic Designer</h3>
+        <p class="Transition__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+       
+
+    <!-- Images -->
+
+        </div>
+        <div class="image Transition__content">
+        <a href="/My portfolio copy/Index.html">
+        <img src="Image/Aboutme.png">
+
+</div>
+</div>
+</div>
+   
+    <style>
+
+*{
+
+margin: 0px;
+padding: 0px;
+
+        }
+
+/* Body styling */
+
+body {
+
+    font-family: "Poppins", sans-serif; /* Font imported from google fonts */
+    height: 100px; /* The height of the page */
+    background-color: #D6CCC2; /* background color of the page */
+    background-repeat: no-repeat; /* No repeat */
+    background-position: center; /* Background to the center */
+    background-size: cover; /* Background cover */
+    overflow-x: hidden; /* Hidden overflow */
+    position: relative; /* Relative position */
+
+}
+
+/* Font face */
+
+@font-face {
+
+    font-family: 'Calliga'; /* Font name */
+    src: url(Fonts/DxGrafik-SemiBold.otf); /* Font TTF file  */
+
+}
+
+/* About me section */
+
+.Aboutme-content {
+
+    width: 65%; /* Content's width */
+    margin: 100px auto;  /* Content's margin size with auto */
+    display: flex; /* Contents in order */
+    align-items: center; /* Text center alignment */
+
+}
+
+.Description {
+
+    width: 500%;; /* Description width */
+    margin: 0px 25px; /* Description margin */
+
+}
+
+.Description h2 {
+
+    font-family: 'Calliga'; /* Font name */
+    font-size: 90px; /* Text size */
+            
+}
+
+.Description h3 {
+
+    font-family: 'Calliga'; /* Font name */
+    font-size: 22px; /* Text size */
+    font-weight: 500; /* Font style */
+    margin-bottom: 20px; /* Text margin to bottom */
+
+}
+
+.Description p {
+
+    font-size: 20px; /* Text size */
+    line-height: 1.5; /* Line height spaces */
+    margin-top: 10px; /* Text margin to top */
+
+}
+        
+.image {
+
+    width: 50%; /* Width of the image */
+
+}
+        
+.image .img {
+
+    width:  900px; /* Width of the image */
+    height: auto; /* Height auto */
+
+}
+
+.Transition__content {
+
+    transform: scale(1.1); /* Zoom out */
+    filter: blur(5px); /* Filter */
+    transition: 1s ease; /* Transition smoothness and duration */
+    opacity: 0; /* Fade out */
+
+}
+
+.Transition__content__active {
+
+    transform: translateX(0px); /* Zoom in */
+    filter: blur(0px); /* Blur from 1 to 0 */
+    opacity: 1; /* Fade in */
+
+}
+
+    </style>
+
+<script>
+
+    const transition = document.querySelectorAll(".Transition__content");
+    
+    document.addEventListener("scroll", function () {
+        transition.forEach(transition => {
+            if (isInView(transition)) {
+                transition.classList.add("Transition__content__active");
+                
+            }
+        });
+    });
+    
+    function isInView(element) {
+        const rec = element.getBoundingClientRect();
+        return (
+            rec.bottom > 0 &&
+            rec.top < (window.innerHeight - 150 || document.documentElement.clientHeight - 150)
+        );
+    }
+    
+</script>
+
+</body>
+</html>

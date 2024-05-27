@@ -1,0 +1,109 @@
+/* Importing Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Body Styling */
+
+body {
+
+    height: 1550px;
+    background-image: url(Backgrounds/hans-isaacson-KFCF5j8n7nI-unsplash.jpg);
+    background-color: #000; /* background color of the homepage */
+    background-position: center; /* background to center */
+    background-size: cover; /* background cover to fit the screen */
+    overflow-x: hidden; /* Hidden overflow */
+    background-repeat: no-repeat; /* no repeat */
+    animation: transitionIn 0.55s; /*transition fade in when you open the website */
+
+}
+
+/* transition keyframe */
+
+@keyframes transitionIn {
+
+    from {
+
+        opacity: 0; /* From start */
+
+    }
+
+    to {
+
+        opacity: 1; /* To end */
+
+    }
+
+}
+
+/* Font face */
+
+@font-face {
+
+    Font-family: 'Calliga'; /* Font name */
+    src: url(Fonts/DxGrafik-SemiBold.otf); /* Font TTF file  */
+
+}
+
+/* Button */
+
+.Button {
+
+    font-family: "Poppins", sans-serif;  /* Font name */
+    border: none; /* No border */
+    padding: 13px; /* Padding size */
+    color: #000; /* Text color: Black */
+    border: none; /* No border */
+    border-radius: 25px; /* Radius of the border */
+    padding: 12px; /* Padding size */
+    font-size: 16px; /* Text size */
+    cursor: pointer; /* cursor */
+    background-color: transparent; /* Transparent background */
+    border: solid 1px #000; /* Button outlines */
+    text-decoration: none; /* No decoration */
+    outline: none; /* No outline */
+    position: absolute; /* Positioning */
+    top: 12%; /* Button positioning to top */
+    left: 50%; /* Button positioning to left */
+    transform: translate(-50%, -50%); /* Button positioning to center*/
+    text-align: center; /* Text alignment*/
+
+  }
+
+/* Title */
+
+.Title {
+    
+    font-family: 'Calliga'; /* Font name */
+    font-size: 95px; /* Text size */
+
+}
+
+/* Parallex */
+
+.parallax-section {
+
+    width: 100%; /* Width size */
+    height: 110vh; /* Height size */
+    display: flex; /* Title in the center */
+    justify-content: center; /* Contents in the center */
+    align-items: center; /* Contents in the center */
+
+}
+
+
+.parallax-section img {
+
+    position: absolute; /* Positioning */
+    top: 0; /* image to top */
+    left: 0; /* image to left */
+    width: 100%; /* image width */
+    height: 100%; /* image height */
+    
+}
